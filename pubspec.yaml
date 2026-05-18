@@ -2,7 +2,7 @@ name: flutter_application_1
 description: "A new Flutter project."
 publish_to: 'none'
 
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
   sdk: ^3.7.0
@@ -14,6 +14,18 @@ dependencies:
   provider: ^6.1.2
   intl: ^0.18.1
   get: ^4.6.5
+  # 网络请求
+  dio: ^5.4.0
+  # 富文本 HTML 渲染
+  flutter_widget_from_html: ^0.15.0
+  # 图片缓存
+  cached_network_image: ^3.3.1
+  # 本地存储（缓存文章列表）
+  shared_preferences: ^2.2.2
+  # 时间格式化
+  timeago: ^3.6.0
+   # 获取设备唯一ID
+  device_info_plus: ^10.1.0  
 
 dev_dependencies:
   flutter_test:

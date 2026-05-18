@@ -134,6 +134,12 @@ class _WaterReminderContentState extends State<_WaterReminderContent> {
             '喝水时间: ${time.toString()}',
             style: const TextStyle(fontSize: 14),
           )).toList(),
+          const SizedBox(height: 20),
+          //点击事件跳转到文章列表页
+          TextButton(
+            onPressed: () => Get.toNamed('/home'),
+            child: const Text('文章列表'),
+          ),
         ],
       ),
     );

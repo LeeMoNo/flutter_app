@@ -59,21 +59,6 @@
     }
   </style>
 
-  <!-- CanvasKit CDN 配置 -->
-  <script>
-    window.flutterConfiguration = {
-      // canvasKitBaseUrl: "https://unpkg.com/canvaskit-wasm@0.39.1/bin/",
-      // 或者使用 Google CDN（国内可能较慢）
-      canvasKitBaseUrl: "https://www.gstatic.com/flutter-canvaskit/",
-    };
-    //在 engineInitializer.initializeEngine 中，尝试调低 CanvasKit 的内存压力：
-    engineInitializer.initializeEngine({
-      useColorEmoji: true,
-      // 禁用多线程渲染，有时多线程在华为内核上会导致死锁闪烁
-      // renderer: "canvaskit",//skwasm
-      // isContextRestorationEnabled: true,
-    });
-  </script>
 </head>
 
 <body>

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/views/detail_screen.dart';
+import 'package:flutter_application_1/views/home_screen.dart';
 import 'package:get/get.dart';
 import 'views/water_reminder_page.dart';
 import 'views/settings_page.dart';
@@ -47,9 +49,15 @@ class MyApp extends StatelessWidget {
           name: '/profile',
           page: () => const ProfilePage(),
         ),
+        GetPage(
+          name: '/home',
+          page: () => const HomeScreen(),
+        ),
+        GetPage(
+          name: '/detail',
+          page: () => DetailScreen(articleId: Get.arguments['articleId']),
+        ),
       ],
     );
   }
 }
-
-//shan
