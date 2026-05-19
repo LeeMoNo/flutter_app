@@ -5,6 +5,9 @@ A new Flutter project.
 This project is a starting point for a Flutter application.
 主要用于测试使用
 
+flutter run
+flutter run -d chrome
+
 
 ## 打包web版
 使用 tree-shake-icons 来只打包使用的图标：

@@ -89,7 +89,7 @@ class _WaterReminderContentState extends State<_WaterReminderContent> {
               //
               Navigator.pop(context);
               //get库关闭弹窗，
-              Get.back();
+              // Get.back();
             },
             child: const Text('确认'),
           ),

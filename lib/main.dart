@@ -25,34 +25,13 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       getPages: [
-        GetPage(
-          name: '/',
-          page: () => const WaterReminderPage(),
-        ),
-        GetPage(
-          name: '/settings',
-          page: () => const SettingsPage(),
-        ),
-        GetPage(
-          name: '/plan',
-          page: () => const HydrationPlanPage(),
-        ),
-        GetPage(
-          name: '/history',
-          page: () => const DrinkHistoryPage(),
-        ),
-        GetPage(
-          name: '/history-detail',
-          page: () => const HistoryDetailPage(),
-        ),
-        GetPage(
-          name: '/profile',
-          page: () => const ProfilePage(),
-        ),
-        GetPage(
-          name: '/home',
-          page: () => const HomeScreen(),
-        ),
+        GetPage(name: '/', page: () => const WaterReminderPage()),
+        GetPage(name: '/settings', page: () => const SettingsPage()),
+        GetPage(name: '/plan', page: () => const HydrationPlanPage()),
+        GetPage(name: '/history', page: () => const DrinkHistoryPage()),
+        GetPage(name: '/history-detail', page: () => const HistoryDetailPage()),
+        GetPage(name: '/profile', page: () => const ProfilePage()),
+        GetPage(name: '/home', page: () => const HomeScreen()),
         GetPage(
           name: '/detail',
           page: () => DetailScreen(articleId: Get.arguments['articleId']),

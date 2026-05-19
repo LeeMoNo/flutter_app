@@ -249,12 +249,13 @@ class _DetailScreenState extends State<DetailScreen> {
 
                 // ─── 互动栏 ───────────────────────────────────────────
                 Container(
-                  padding: const EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    color: const Color(0xFFF9FAFB),
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                  child: Column(
+                  padding: const EdgeInsets.all(5),
+                  // decoration: BoxDecoration(
+                  //   color: const Color(0xFFF9FAFB),
+                  //   borderRadius: BorderRadius.circular(16),
+                  // ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       // 阅读量
                       Row(
@@ -275,7 +276,6 @@ class _DetailScreenState extends State<DetailScreen> {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 20),
 
                       // 点赞 / 踩
                       Row(
@@ -290,7 +290,7 @@ class _DetailScreenState extends State<DetailScreen> {
                             activeColor: const Color(0xFF4F46E5),
                             onTap: () => _react('like'),
                           ),
-                          const SizedBox(width: 32),
+                          const SizedBox(width: 15),
                           // 踩按钮
                           _ReactionButton(
                             icon: Icons.thumb_down_outlined,
@@ -337,19 +337,19 @@ class _ReactionButton extends StatelessWidget {
       onTap: onTap,
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
-        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-        decoration: BoxDecoration(
-          color: isActive ? activeColor.withOpacity(0.08) : Colors.white,
-          borderRadius: BorderRadius.circular(50),
-          border: Border.all(
-            color: isActive ? activeColor : const Color(0xFFE5E7EB),
-            width: isActive ? 1.5 : 1,
-          ),
-        ),
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+        // decoration: BoxDecoration(
+        //   color: isActive ? activeColor.withOpacity(0.08) : Colors.white,
+        //   borderRadius: BorderRadius.circular(50),
+        //   border: Border.all(
+        //     color: isActive ? activeColor : const Color(0xFFE5E7EB),
+        //     width: isActive ? 1.1 : 1,
+        //   ),
+        // ),
         child: Row(mainAxisSize: MainAxisSize.min, children: [
           Icon(
             isActive ? activeIcon : icon,
-            size: 20,
+            size: 19,
             color: isActive ? activeColor : const Color(0xFF6B7280),
           ),
           const SizedBox(width: 8),
