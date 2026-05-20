@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/views/detail_screen.dart';
 import 'package:flutter_application_1/views/home_screen.dart';
+import 'package:flutter_application_1/views/search_page.dart';
 import 'package:get/get.dart';
 import 'views/water_reminder_page.dart';
 import 'views/settings_page.dart';
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/history-detail', page: () => const HistoryDetailPage()),
         GetPage(name: '/profile', page: () => const ProfilePage()),
         GetPage(name: '/home', page: () => const HomeScreen()),
+        GetPage(name: '/search', page: () => const SearchPage()),
         GetPage(
           name: '/detail',
           page: () => DetailScreen(articleId: Get.arguments['articleId']),

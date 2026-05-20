@@ -108,12 +108,11 @@ class _WaterReminderContentState extends State<_WaterReminderContent> {
         children: [
           Center(
             child: SizedBox(
-              width: 500,
-              height: _WaterReminderContent.imageHeight,
+              width: double.infinity,
+              height: 250,
               child: Image.asset('assets/images/drink_water.png'),
             ),
           ),
-          const SizedBox(height: 20),
           Text(
             '今日已喝水量: ${viewModel.consumedAmount}ml',
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
@@ -139,6 +138,10 @@ class _WaterReminderContentState extends State<_WaterReminderContent> {
           TextButton(
             onPressed: () => Get.toNamed('/home'),
             child: const Text('文章列表'),
+          ),
+          TextButton(
+            onPressed: () => Get.toNamed('/search'),
+            child: const Text('搜索页'),
           ),
         ],
       ),
