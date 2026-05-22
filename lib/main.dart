@@ -22,7 +22,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: '设置喝水提醒项目',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF26A69A)),
+        useMaterial3: true,
       ),
       initialRoute: '/',
       getPages: [
